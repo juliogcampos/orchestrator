@@ -15,3 +15,11 @@ for (let i = 1; i <= 10; i++) {
 // Orquestrar serviços
 orchestrator = new Orchestrator(arr);
 orchestrator.run;
+
+// Usando propriedade get da classe Service
+let service_1 = arr[0];
+console.log(service_1.capitalName);
+
+// Usando propriedade set da classe Service
+service_1.changeName = "Serviço 0";
+console.log(service_1.name);
