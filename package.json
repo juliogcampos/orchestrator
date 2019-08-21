@@ -1,0 +1,19 @@
+{
+  "name": "ooes6",
+  "version": "1.0.0",
+  "description": "Object Oriented Programming using ECMA Script 6 (ECMAScript 2015)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliogcampos/ooes6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliogcampos/ooes6/issues"
+  },
+  "homepage": "https://github.com/juliogcampos/ooes6#readme"
+}
