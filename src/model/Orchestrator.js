@@ -5,7 +5,11 @@ class Orchestrator {
     }
 
     run() {
-        console.log("Orchestrate services", this.services);
+        let services = this.services;
+        console.log("Orchestrating services")
+        services.forEach(service => {
+            console.log("Run service", service.id, "...");
+        });
     }
 }
 
