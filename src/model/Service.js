@@ -1,8 +1,11 @@
+"use strict"
+
 class Service {
-    constructor(_id, _name, _type) {
+    constructor(_id, _name, _type, _data) {
         this.id = _id;
         this.name = _name;
         this.type = _type;
+        this.data = _data;
     }
 
     get capitalName() {
