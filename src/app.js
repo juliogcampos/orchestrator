@@ -8,13 +8,15 @@ let arr = [];
 
 // Criar array de serviços
 for (let i = 1; i <= 10; i++) {
-    service = new Service(i, `service_${i}`);
+    service = new Service(i, `service_${i}`, "");
     arr.push(service);
 }
 
 // Orquestrar serviços
 orchestrator = new Orchestrator(arr);
-orchestrator.run;
+orchestrator.oneService = 1;
+orchestrator.allServices;
+
 
 // Usando propriedade get da classe Service
 let service_1 = arr[0];

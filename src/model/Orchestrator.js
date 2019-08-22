@@ -1,13 +1,20 @@
 class Orchestrator {
     constructor(_services = []) {
         this.services = _services;
-        this.run();
+        this.oneService();
+        this.allServices();
     }
 
-    run() {
+    oneService(id) {
+        let service = this.services[0].id;
+        console.log("Orchestrating service", service);
+        console.log("Run service", service, "...");
+    }
+
+    allServices() {
         let services = this.services;
+        console.log("Orchestrating all services");
         console.log(this.services);
-        console.log("Orchestrating services")
         services.forEach(service => {
             console.log("Run service", service.id, "...");
         });

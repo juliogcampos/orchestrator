@@ -1,7 +1,8 @@
 class Service {
-    constructor(_id, _name) {
+    constructor(_id, _name, _type) {
         this.id = _id;
         this.name = _name;
+        this.type = _type;
     }
 
     get capitalName() {
