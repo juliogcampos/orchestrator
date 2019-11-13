@@ -1,17 +1,26 @@
 "use strict"
 class Orchestrator {
 
-    constructor(arrayServices = []) {
-        this.services = arrayServices;
-        this.allServices();
-        this.selectedServices();
+    constructor(services = []) {
+        this.services = services;
+        this.runAllServices();
+        this.runSelectedServices();
     }
 
     get getServices() {
         return this.services;
     }
 
-    selectedServices(arr = []) {
+    runAllServices() {
+        let services = this.services;
+        console.log("Orchestrating all services");
+        console.log(this.services);
+        services.forEach(service => {
+            console.log("Run service", service.id, "...");
+        });
+    }
+
+    runSelectedServices(arr = []) {
         let services = this.getServices;
         let selected_services = arr;
         let index_of_services = [];
@@ -24,15 +33,6 @@ class Orchestrator {
 
         index_of_services.forEach(item => {
             console.log("Run selected service", services[item].id, "...");
-        });
-    }
-
-    allServices() {
-        let services = this.services;
-        console.log("Orchestrating all services");
-        console.log(this.services);
-        services.forEach(service => {
-            console.log("Run service", service.id, "...");
         });
     }
 }
