@@ -1,8 +1,8 @@
 "use strict"
 class Orchestrator {
 
-    constructor(_services = []) {
-        this.services = _services;
+    constructor(arrayServices = []) {
+        this.services = arrayServices;
         this.allServices();
         this.selectedServices();
     }
